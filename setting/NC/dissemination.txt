@@ -1,0 +1,42 @@
+Scenario.name = %%Group1.DecisionEngine%%Seed%%MovementModel.rngSeed%%
+Scenario.endTime = 43200.00
+Scenario.updateInterval = 1
+Scenario.simulateConnections = true
+
+Optimization.endOfEventProcessing = 43200.00
+MovementModel.worldSize = 400, 200
+
+Scenario.useRealNode = 0
+btInterface.transmitSpeed = 256k
+btInterface.transmitRange = 10
+
+
+Group.router = DecisionEngineRouter
+
+# the router is DecisionEngine but each decider is according to the specified in the Groupx.DecisionEngien
+DecisionEngineRouter.decisionEngine = [Test]
+Group1.DecisionEngine = Test
+
+
+
+MovementModel.rngSeed = [0;1;2;3;4;5;6;7;8;9]
+
+
+Group1.groupID = R
+Group1.movementModel = RandomWaypoint
+Group1.nrofHosts = 16
+Group1.bufferSize = 100M
+Group1.msgTtl = 12000
+
+Events.nrof = 1
+Events1.class = StandardEventsReader
+Events1.filePath = data/connections/messages.txt
+
+
+#Events1.hosts = [0,1]
+#Events1.tohosts = [21,22]
+#Events1.interval = 1,2
+#Events1.size = 10k,11k
+
+Report.reportDir = reports/NC/Test
+
