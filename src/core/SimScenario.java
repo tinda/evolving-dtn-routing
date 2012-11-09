@@ -381,11 +381,12 @@ public class SimScenario implements Serializable {
 			
 			
 			//By Khalil: create the decider proto. from the group settings
-					
+				/*	
 				RoutingDecisionEngine deciderProto = 
 					(RoutingDecisionEngine)s.createIntializedObject(ROUTING_PACKAGE + 
 							s.getSetting("DecisionEngine"));
-			mRouterProto.setDecider(deciderProto);
+			mRouterProto.setDecider(deciderProto);*/
+			
 			
 			// checks that these values are positive (throws Error if not)
 			ensurePositiveValue(nrofHosts, NROF_HOSTS_S);

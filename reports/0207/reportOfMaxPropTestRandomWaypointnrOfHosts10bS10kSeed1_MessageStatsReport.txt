@@ -1,0 +1,23 @@
+Message stats for scenario reportOfMaxPropTestRandomWaypointnrOfHosts10bS10kSeed1
+sim_time: 43200.1000
+created: 525
+started: 4064
+relayed: 4064
+aborted: 0
+dropped: 0
+removed: 4039
+delivered: 525
+delivery_prob: 1.0000
+response_prob: 0.0000
+overhead_ratio: 6.7410
+latency_avg: 765.0785
+latency_med: 699.8000
+hopcount_avg: 1.8952
+hopcount_med: 2
+copies_avg: 4.278095238095238
+total_copies_avg: 7.740952380952381
+buffertime_avg: 889.1875
+buffertime_med: 736.3000
+custodiantime_avg: 6840.8160
+rtt_avg: NaN
+rtt_med: NaN

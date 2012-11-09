@@ -87,7 +87,7 @@ public abstract class MessageRouter {
 
 	/** applications attached to the host */
 	private HashMap<String, Collection<Application>>	applications = null;
-	protected RoutingDecisionEngine decider ;
+	//protected RoutingDecisionEngine decider ;
 	
 	/**
 	 * Constructor. Creates a new message router based on the settings in
@@ -152,7 +152,7 @@ public abstract class MessageRouter {
 			}
 		}
 		
-		this.decider = r.decider.replicate();
+		//this.decider = r.decider.replicate();
 	}
 	
 	/**
@@ -664,9 +664,9 @@ public abstract class MessageRouter {
 			+ " messages";
 	}
 
-	public void setDecider(RoutingDecisionEngine deciderProto) {
-		decider = deciderProto;
+	//public void setDecider(RoutingDecisionEngine deciderProto) {
+	//	decider = deciderProto;
 		// TODO Auto-generated method stub
 		
-	}
+	//}
 }
